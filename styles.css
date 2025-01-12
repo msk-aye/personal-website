@@ -1,0 +1,517 @@
+/* Root Variables for Consistent Styling */
+:root {
+    --primary-color: #4caf50;
+    --background-color: #0e0e0e;
+    --secondary-background-color: #1a1a1a;
+    --text-color: #ffffff;
+    --secondary-text-color: #b0b0b0;
+    --font-family: 'Roboto', sans-serif;
+}
+
+/* Global Styles */
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: var(--secondary-background-color);
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero {
+    position: relative; /* Allows layering for the overlay */
+    background-image: url('images/pcb-background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: var(--text-color); /* Ensures text is white by default */
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay with 50% transparency */
+    z-index: 1; /* Places it below the text */
+}
+
+.hero h1, .hero p, .hero .highlight {
+    position: relative; /* Ensures text stays on top of the overlay */
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); /* Stronger shadow for better contrast */
+}
+
+.hero .highlight {
+    color: yellow; /* Keeps highlights distinct */
+}
+
+.hero p {
+    font-size: 1.5rem;
+    color: white;
+
+}
+
+/* Sections */
+.section {
+    padding: 60px 20px;
+    background-color: var(--secondary-background-color);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* About Section */
+.about-container {
+    display: flex;
+    align-items: center; /* Vertically align items */
+    gap: 20px; /* Add space between image and text */
+    max-width: 1200px; /* Constrain width for better readability */
+    margin: 0 auto; /* Center the container */
+    background-color: #262626;
+    border-radius: 15px;
+    padding: 20px; /* Add some padding inside the container */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow for depth */
+}
+
+.about-image img {
+    width: 100%; /* Image takes 15% of the container's width */
+    max-width: 200px; /* Ensure it doesn’t exceed a certain size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image scales properly */
+    border: 3px solid var(--primary-color); /* Add a border for style */
+}
+
+.about-content {
+    flex: 1; /* Allow the text to take up remaining space */
+    color: var(--secondary-text-color);
+    line-height: 1.6;
+    
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.about-content p {
+    margin-bottom: 1rem;
+}
+
+/* Skills Section */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); /* Automatically adjust columns */
+    gap: 20px;
+    justify-content: center;
+    justify-items: center; /* Center items within their grid cells */
+    align-items: center;
+    margin: 0 auto;
+    width: 75%;
+    padding: 0;
+}
+
+.skill-item {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    background-color: #262626;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    display: flex; /* Flexbox for centering content */
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center image and text horizontally */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow for depth */
+}
+
+.skill-item img {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s ease;
+}
+
+.skill-item img:hover {
+    transform: scale(1.2);
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    color: var(--text-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    z-index: 10;
+    font-size: 0.9rem;
+    top: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.skill-item:hover .tooltip {
+    display: block;
+}
+
+/* Projects Section */
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Center the grid items */
+    max-width: 1200px; /* Constrain the width for better readability */
+    margin: 0 auto; /* Center the container */
+}
+
+.project {
+    background-color: #262626;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 1 calc(40% - 20px); /* Three projects per row with gaps accounted */
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    min-height: 550px; /* Fixed height for project boxes */
+    text-align: center; /* Center text and child elements */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow for depth */
+}
+
+.project:hover {
+    transform: translateY(-10px); /* Optional: Lift effect on hover */
+}
+
+/* Wrapper for Project Images */
+.project-image {
+    width: 100%;
+    /* Remove max-height and overflow to prevent cropping */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    margin-bottom: 15px; /* Space below the image */
+    text-align: center; /* Center the image */
+}
+
+/* Project Images */
+.project-image img {
+    max-width: 100%; /* Prevent image from exceeding container width */
+    max-height: 350px; /* Limit the maximum height */
+    height: auto; /* Maintain aspect ratio */
+    width: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Smooth zoom effect on hover */
+    display: inline-block; /* Allow text-align: center to center the image */
+}
+
+.project-image img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.project p {
+    color: var(--secondary-text-color);
+    line-height: 1.5;
+    max-height: 140px; /* Limit text visibility */
+    overflow: hidden;
+    transition: max-height 0.3s ease; /* Smooth expansion effect */
+}
+.project.expanded {
+    min-height: auto; /* Adjust height dynamically when expanded */
+    overflow: visible; /* Ensure the full content is displayed */
+    transition: min-height 0.3s ease; /* Smoothly adjust height */
+}
+
+.project.expanded p {
+    margin-bottom: 20px;
+    max-height: none; /* Remove height restriction for expanded text */
+}
+
+.expand-btn {
+    display: inline-block; /* Ensure it’s treated as a block for alignment */
+    margin: 20px auto; /* Center the button and add spacing */
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    padding: 12px 24px; /* Increase button size for better visibility */
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem; /* Adjust font size */
+    transition: background-color 0.3s ease;
+    text-align: center;
+    position: relative; /* Ensure proper alignment inside the project box */
+}
+
+.expand-btn:hover {
+    background-color: #388e3c;
+}
+
+/* Project Overlay */
+.project-overlay {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 100%; /* Start off-screen to the right */
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-color);
+    overflow-y: auto;
+    transition: left 0.5s ease;
+    z-index: 1000;
+}
+
+.project-overlay.active {
+    display: block;
+    left: 0; /* Slide in from the right */
+}
+
+.project-content {
+    position: relative;
+    padding: 20px;
+    max-width: 800px;
+    margin: 60px auto;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    color: var(--text-color);
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.project-details {
+    text-align: left;
+    color: var(--secondary-text-color);
+    margin: 20px 0; /* Optional: Add spacing for better layout */
+    line-height: 1.6; /* Improve readability */
+}
+
+.project-details ul {
+    padding-left: 20px; /* Ensures nested lists are also aligned */
+    margin-left: 0;
+}
+
+.project-details h3 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.project-details p {
+    color: var(--secondary-text-color);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.project-details .code-section {
+    margin-top: 20px;
+}
+
+.code-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    justify-content: center; /* Center code buttons */
+}
+
+.code-buttons button {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.code-buttons button.active {
+    background-color: #388e3c;
+}
+
+.code-buttons button:hover {
+    background-color: #388e3c;
+}
+
+pre code {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    white-space: pre-wrap; /* Allows long code lines to wrap */
+    word-break: break-word; /* Breaks long words to prevent overflow */
+}
+
+/* Adjustments for when overlay is active */
+body.overlay-active {
+    overflow: hidden; /* Prevent background scrolling */
+}
+
+/* Contact Section */
+.contact {
+    background-color: var(--background-color);
+    text-align: center;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.contact a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.contact a:hover {
+    color: #81c784;
+}
+
+/* Footer */
+footer {
+    background-color: --background-color;
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px;
+}
+
+/* Category Titles */
+.category-title {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-image img {
+        width: 100%; /* Adjust percentage for smaller screens */
+        max-width: 100px; /* Ensure it doesn’t exceed a certain size */
+    }
+    .about p {
+        font-size: 0.8rem; /* Smaller font size for mobile */
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Smaller columns on mobile */
+        gap: 15px; /* Reduce gap for smaller screens */
+        width: 90%; /* Increase width for smaller screens */
+    }
+
+    .skill-item img {
+        width: 80px; /* Smaller icons on mobile */
+        height: 80px;
+    }
+
+    .projects-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+
+    .project p {
+        font-size: 0.9rem; /* Smaller paragraph font */
+        line-height: 1.4; /* Slightly tighter line spacing */
+    }
+
+    .project ul li {
+        font-size: 0.8rem; /* Match paragraph font size */
+        line-height: 1.4;
+    }
+
+    .project-image img {
+        max-width: 100%; /* Make the image responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .project-details {
+        padding: 0 10px; /* Add some padding around the text */
+    }
+
+    .project-details h4 {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    .project-details p {
+        font-size: 0.8rem; /* Adjust paragraph font size */
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Smaller column width on mobile */
+        gap: 15px; /* Reduce gap between items */
+    }
+
+    .skill-item img {
+        width: 60px; /* Smaller icon size */
+        height: 60px;
+    }
+
+    .skill-item p {
+        font-size: 0.8rem; /* Adjust text size */
+    }
+}

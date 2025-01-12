@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags for SEO and Responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="google-site-verification" content="RlZlux_H52ZfQN0ERHJL68nFA0TxvMR1Cs7qJXGSUVY" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Adnaan Buksh showcasing my skills, projects, and achievements in Electrical Engineering and Cyber Security.">
+    <meta name="keywords" content="Adnaan Buksh, Electrical Engineering, Cyber Security, Portfolio, Projects, Undergraduate">
+    <meta name="author" content="Adnaan Buksh">
+    <title>Adnaan Buksh - Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
+    <!-- Prism.js CSS for Syntax Highlighting -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Tech Stack</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Hi, I am <span class="highlight">Adnaan</span></h1>
+        <p>4th Year Electrical Engineer </p>
+        <p>& Computer Science (Cyber Security)</p>
+        <p>Undergraduate</p>
+    </header>
+
+    <!-- About Section -->
+    <main>
+        <section id="about" class="section about">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="images/pfp.jpg" alt="Profile Picture">
+                </div>
+                <div class="about-content">
+                    
+                    <p>Hello, I'm Adnaan. I'm passionate about contributing to the transition towards renewable energy, working on the electrical aspects of control systems, and ensuring the security of digital systems. I actively seek opportunities to enhance my skills and contribute to real-world projects that integrate electrical engineering and cybersecurity practices.</p>
+                    <p>Currently, Working as an Undergraduate Engineer at Noja Power, Testing and ensuring quality assurance for Noja Power's applications by identifying, reporting, and providing solutions for bugs to enhance software reliability and performance. Aswell as developing, designing, and implementing automated security infrastructure to ensure robust protection and system integrity for the DCM application, all while maintaining a 6.2 GPA in my studies.</p>
+                    <p>My curiosity for exploring new electrical systems and technologies has led me to diverse projects, including creating multiple games in Python, C, and Java. I've created chat servers in Python and C and programmed on various microcontrollers. Each project offers a distinct chance to enhance my technical skills and drive innovative solutions.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack Section -->
+        <section id="skills" class="section skills">
+            <h2 class="section-title">Tech Stack</h2>
+            <div class="skills-grid">
+                <!-- Skill Item -->
+                <div class="skill-item">
+                    <img src="/images/python.png" alt="Python">
+                    <div class="tooltip">Python</div>
+                </div>
+
+                <div class="skill-item">
+                    <img src="/images/c.png" alt="C">
+                    <div class="tooltip">C</div>
+                </div>
+
+                <div class="skill-item">
+                    <img src="/images/java.png" alt="Java">
+                    <div class="tooltip">Java</div>
+                </div>
+
+                <div class="skill-item">
+                    <img src="/images/sql.png" alt="SQL">
+                    <div class="tooltip">SQL</div>
+                </div>
+
+                <div class="skill-item">
+                    <img src="/images/linux.png" alt="Linux">
+                    <div class="tooltip">Linux</div>
+                </div>
+
+                <div class="skill-item">
+                    <img src="/images/altium-altium-designer.png" alt="Altium">
+                    <div class="tooltip">Altium</div>
+                </div>
+
+                <div class="skill-item">
+                    <img src="/images/matlab.png" alt="Matlab">
+                    <div class="tooltip">Matlab</div>
+                </div>
+
+                <div class="skill-item">
+                    <img src="/images/wireshark.png" alt="WireShark">
+                    <div class="tooltip">WireShark</div>
+                </div>
+
+                <div class="skill-item">
+                    <img src="/images/arduino.png" alt="Arduino">
+                    <div class="tooltip">Arduino</div>
+                </div>
+
+                <div class="skill-item">
+                    <img src="/images/office365.png" alt="Office 365">
+                    <div class="tooltip">Office 365</div>
+                </div>
+
+                <div class="skill-item">
+                    <img src="/images/canva.png" alt="Canva">
+                    <div class="tooltip">Canva</div>
+                </div>
+
+            </div>
+        </section>
+
+    
+        <!-- Projects Section -->
+        <section id="projects" class="section projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project" data-project="engg2800">
+                    <div class="project-image">
+                        <img src="images/engg2800.png" alt="PEEP Watch" loading="lazy">
+                    </div>
+                    <h3>E-paper Portable Digital Watch</h3>
+                    <p>
+                        Developed a pocket-watch-style personal organizer integrating features like real-time timekeeping, weather display, alarms, accelerometer-based screen rotation, and optical communication for date and time transfer. The project adhered to TP standards and included low-power operation and persistent configuration storage.
+                    </p>
+                    <ul class="project-details">
+                        <li><strong>Hardware:</strong> Designed PCBs using Altium and integrated components like the LM66200 for load switching, MCP1700 for voltage regulation, and CD4075CN for pin optimization. Soldered and assembled all hardware components.</li>
+                        <li><strong>Embedded Software:</strong>
+                            <ul class="project-details">
+                                <li>Programmed in C to handle UART communication, optical data transfer, EEPROM storage, timekeeping, and alarms.</li>
+                                <li>Used ISR for efficient data handling and <code>strtok_r</code> for parsing incoming data.</li>
+                                <li>Integrated accelerometer-based display rotation and LED/buzzer notifications using PWM and delays.</li>
+                                <li>Implemented binary encoding for optical communication via photodiode and ADC.</li>
+                            </ul>
+                        </li>
+                        <li><strong>PC Software:</strong> Designed a GUI for parameter configuration and data synchronization. Ensured data persistence across power cycles and seamless communication with the device over UART.</li>
+                        <li><strong>Leadership & Management:</strong> Coordinated the team, managed the bill of materials, ensured TP standards compliance, and prepared the final documentation.</li>
+                    </ul>
+                    <p><strong>Result:</strong> Successfully developed a fully functional e-paper-based digital watch system with intuitive GUI configuration, reliable optical and USB communication, and efficient low-power operation. The final product met all specified requirements and demonstrated robust performance during testing and presentation.</p>
+                    <!--button class="expand-btn">Read More</button-->
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project" data-project="csse3010">
+                    <div class="project-image">
+                        <img src="images/csse3010.png" alt="Embedded Microcontroller Programming" loading="lazy">
+                    </div>
+                    <h3>Remote-Controlled Microscope (RCM) System</h3>
+                    <p>
+                        Developed a system to control a remote-controlled microscope (RCM), capable of precise movements in 3D, zooming, and rotating. The project incorporated radio communication, real-time data visualization, and user interaction through a console and VT100 display.
+                    </p>
+                    <ul class="project-details">
+                        <li><strong>Hardware Implementation:</strong>
+                            <ul>
+                                <li>Utilized the Nucleo-F429ZI board, NRF24L01+ radio module, and other peripherals like RGB LEDs and the MFS board.</li>
+                                <li>Designed and implemented a finite state machine (FSM) for RCM control using FreeRTOS tasks.</li>
+                                <li>Developed hamming-encoded packets for radio communication, supporting operations like JOIN, XYZ movement, rotation, and zoom.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Software Development:</strong>
+                            <ul>
+                                <li>Programmed in C to handle console inputs, radio packet creation, and transmission.</li>
+                                <li>Integrated VT100 escape sequences for real-time visualization of RCM head position and system status.</li>
+                                <li>Implemented error handling and task synchronization using FreeRTOS queues, semaphores, and event bits.</li>
+                                <li>Designed modular <code>mylib</code> drivers for system components and reusable code functionality.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Advanced Features:</strong>
+                            <ul>
+                                <li>Created a console-based control system for moving the RCM head and adjusting zoom/rotation.</li>
+                                <li>Added visual feedback through LED color changes and position updates on the VT100 display.</li>
+                                <li>Extended the system to handle user-defined challenges, like task memory monitoring and seven-segment display integration.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p><strong>Result:</strong> Successfully developed and demonstrated a fully functional RCM system that met all project requirements. The final product showcased reliable communication, real-time visualization, and precise control, highlighting strong integration of hardware and software components.</p>
+                                        <!--button class="expand-btn">Read More</button-->
+                </div>
+
+                 <!-- Project 2 -->
+                 <div class="project" data-project="engg1100">
+                    <div class="project-image">
+                        <img src="images/engg1100.png" alt="Remote Firefighting Vehicle Project" loading="lazy">
+                    </div>
+                    <h3>Remote Firefighting Vehicle Prototype</h3>
+                    <p>
+                    Designed and developed a proof-of-concept prototype for a remote-controlled firefighting vehicle aimed at enhancing safety in hazardous environments. The project involved integrating mechanical, electronic, and software components to create a functional and remotely operable system.
+                    </p>
+                    <ul class="project-details">
+                        <li><strong>Mechanical Design:</strong> Utilized Fusion 360 to design and fabricate a durable, water-resistant housing for all components, ensuring protection from environmental factors and proper assembly within the vehicle.</li>
+                        <li><strong>Electronics Development:</strong> Assembled and soldered a custom PCB (green board visible in the prototype) to regulate voltage to the components and serve as an on-board controller for the water pump.</li>
+                        <li><strong>Software Implementation:</strong> Programmed control logic for the wheel motors, arm servos, and water pump using Arduino with C, enabling seamless integration of the hardware and remote communication capabilities.</li>
+                        <li><strong>Communication System:</strong> Implemented a radio communication module to enable remote operation of the vehicle using a smartphone.</li>
+                    </ul>
+                    <p><strong>Result:</strong> Successfully powered and remotely controlled all components of the vehicle via a smartphone, demonstrating a functional prototype capable of addressing remote firefighting challenges.</p>
+
+                    <!--button class="expand-btn">Read More</button-->
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project" data-project="cybr3000">
+                    <div class="project-image">
+                        <img src="images/cybr3000.png" alt="Firewall and IDS" loading="lazy">
+                    </div>
+                    <h3>Firewall and Intrusion Detection System</h3>
+                    <p>
+                        Developed and implemented a network security system comprising firewall rules and an Intrusion Detection System (IDS) to monitor, detect, and mitigate network attacks across various protocols.
+                    </p>
+                    <ul class="project-details">
+                        <li><strong>Firewall:</strong> Configured <strong>iptables</strong> rules on a Linux-based system to manage traffic, including:
+                            <ul>
+                                <li>Restricting access to specific ports (e.g., SSH, HTTP, HTTPS).</li>
+                                <li>Limiting ICMP traffic to prevent ping floods.</li>
+                                <li>Allowing only established and related connections for secure communication.</li>
+                                <li>Blocking unwanted traffic while ensuring DNS and web service functionality.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Intrusion Detection System:</strong>
+                            <ul>
+                                <li>Designed a Python-based IDS using the <strong>Scapy</strong> library for packet inspection and analysis.</li>
+                                <li>Applied detection rules to identify suspicious packets in <code>.pcap</code> files.</li>
+                                <li>Detected anomalies like TCP SYN floods, malicious content, and mixed protocol attacks through:</li>
+                                <ul>
+                                    <li>Content-based filtering.</li>
+                                    <li>Packet flag analysis (e.g., SYN, ACK, RST).</li>
+                                    <li>Time-based thresholds (e.g., 10 packets in 2 seconds).</li>
+                                </ul>
+                                <li>Logged alerts in real-time, including timestamps and violation details.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p><strong>Result:</strong> Successfully implemented a firewall capable of fine-grained traffic control and an IDS that detected diverse attack scenarios, including protocol-specific and mixed-protocol threats. Delivered a robust network security solution validated with comprehensive testing scenarios.</p>
+                    
+                    <!--button class="expand-btn">Read More</button-->
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project" data-project="csse2010">
+                    <div class="project-image">
+                        <img src="images/csse2010.png" alt="C programming on AVR in Microchip Studio environment." loading="lazy">
+                    </div>
+                    <h3>Snakes and Ladders Game on AVR Microcontroller</h3>
+                    <p>
+                        Modified a basic program template to implement additional features for a 2-player Snakes and Ladders game using C in the Microchip Studio environment.
+                    </p>
+                    <ul class="project-details">
+                        <li><strong>Microcontroller:</strong> Used the AVR ATmega324A microcontroller to program the game, receiving input from multiple sources and displaying output on an LED matrix.</li>
+                        <li><strong>Programming Environment:</strong> Developed and modified code in C using the Microchip Studio environment.</li>
+                        <li><strong>Inputs and Outputs:</strong> Integrated serial input, joystick control, and sound output to create an interactive gaming experience.</li>
+                    </ul>
+                    <p><strong>Result:</strong> Successfully implemented a fully functional 2-player Snakes and Ladders game with responsive controls, sound effects, and a visual display on an LED matrix.</p>
+                            <!--button class="expand-btn">Read More</button-->
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="project" data-project="elec2004">
+                    <div class="project-image">
+                        <img src="images/elec2004.png" alt="Filter design" loading="lazy">
+                    </div>
+                    <h3>Filter design</h3>
+                    <p>
+                        Designed a circuit to reverse the effects of a black box containing unknown elements, adhering to specific constraints. The project involved detailed analysis, design, testing, and refinement to achieve the desired results.
+                    </p>
+                    <ul class="project-details">
+                        <li><strong>Frequency Analysis:</strong> Conducted frequency response analysis using an oscilloscope to understand the behavior and characteristics of the black box.</li>
+                        <li><strong>Circuit Design:</strong> Performed calculations to design an inverse circuit tailored to counteract the black box's effects, incorporating a 2nd-order high-pass filter and amplifier.</li>
+                        <li><strong>Testing and Refinement:</strong> Developed, tested, and iteratively modified the circuit to ensure accurate performance and compatibility with input signal requirements.</li>
+                    </ul>
+                    <p><strong>Result:</strong> Successfully designed a 2nd-order high-pass filter and amplifier that negated the effects of the black box. The output signal was amplified and matched the input in amplitude and frequency characteristics.</p>                    <!--button class="expand-btn">Read More</button-->
+                </div>
+                
+                <!-- Project 7 -->
+                <div class="project" data-project="elec3004">
+                    <div class="project-image">
+                        <img src="images/elec3004.png" alt="Image Reconstruction" loading="lazy">
+                    </div>
+                    <h3>Image Reconstruction for Noise Reduction</h3>
+                    <p>
+                        Developed and implemented a digital image processing system to reconstruct and denoise images corrupted by high-frequency noise during transmission.
+                    </p>
+                    <ul class="project-details">
+                        <li><strong>Filter Design:</strong> Created a low-pass digital finite impulse response filter in MATLAB to target noise frequencies above a specified cutoff (e.g., 0.125 px⁻¹).</li>
+                        <li><strong>Convolution Application:</strong> Applied the filter using convolution techniques to denoise the image while retaining critical details.</li>
+                        <li><strong>Filter Configurations:</strong>
+                            <ul>
+                                <li>Experimented with varying cutoff frequencies to balance detail preservation and noise suppression.</li>
+                                <li>Tested different filter window sizes (e.g., -10:10, -50:50) to analyze their impact on image sharpness and noise attenuation.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Performance Analysis:</strong> Compared pixel intensities of rows in the original, noisy, and reconstructed images to evaluate reconstruction quality.</li>
+                    </ul>
+                    <p><strong>Result:</strong> Successfully reconstructed denoised images, reducing high-frequency noise while preserving critical details. Demonstrated the trade-offs between noise suppression and detail retention, optimizing filter parameters to achieve clarity and sharpness in the reconstructed image.</p>
+
+                    <!--button class="expand-btn">Read More</button-->
+                </div>
+
+            </div>
+
+
+            <!-- Coding Projects Category -->
+            <h2 class="section-title">Coding Projects</h2>
+            <div class="projects-grid">
+                <!-- Coding Project 1 -->
+                <div class="project" data-project="comp3506">
+                    <div class="project-image">
+                        <img src="images/comp3506.png" alt="Functional Programming" loading="lazy">
+                    </div>
+                    
+                    <h3>Functional Programming Projects</h3>
+
+                    <div class="project-details">
+                        <h4>Code Optimization and Graph Algorithms</h4>
+                        <p>
+                            Optimised algorithms and data structures for efficiency in space and time using functional programming principles like recursion, higher-order functions, and immutability. Developed custom functions and data types for k-mer querying, frequency analysis, and graph problems.
+                        </p>
+                        <p>
+                            Implemented graph algorithms such as BFS, DFS, and Dijkstra’s Algorithm for pathfinding, traversal, and connectivity analysis in weighted and unweighted graphs. Designed efficient data structures, including dynamic arrays and priority queues, for scalable graph processing.
+                        </p>
+                        <p>
+                            These solutions improved execution times and memory usage across large-scale data and graph processing tasks, balancing theoretical concepts with practical implementation.
+                        </p>
+                    </div>
+                    
+                    <!--button class="expand-btn">Read More</button-->
+                </div>
+
+                <!-- Coding Project 3 -->
+                <div class="project" data-project="csse2002">
+                    <div class="project-image">
+                        <img src="images/csse2002.png" alt="Java – GUI based Programming" loading="lazy">
+                    </div>
+                    <h3>Java - Production Factory Belt System Simulation</h3>
+                    <p>
+                        Developed classes and methods to support an application that simulates a Production Factory Belt System.
+                    </p>
+                    <ul class="project-details">
+                        <li><strong>Programming Language:</strong> Implemented the application in Java, utilizing classes, interfaces, and lambda functions to ensure efficient and modular code design.</li>
+                        <li><strong>Testing:</strong> Created JUnit tests to validate functionality and ensure reliability of the application.</li>
+                        <li><strong>Graphical User Interface:</strong> Designed and presented the system in a GUI format for ease of interaction and demonstration.</li>
+                    </ul>
+                    <p><strong>Result:</strong> Successfully developed and tested a fully functional Production Factory Belt System, showcasing modular design and robust performance.</p>
+                              <!--button class="expand-btn">Read More</button-->
+                </div>
+
+                <!-- Coding Project 5 -->
+                <div class="project" data-project="csse1001">
+                    <div class="project-image">
+                        <img src="images/csse1001.png" alt="Python - Tkinter-based GUI game of Maze Runner" loading="lazy">
+                    </div>
+                    <h3>Python - Tkinter-based GUI Game of Maze Runner</h3>
+                    <p>
+                        Developed a Maze Runner game featuring a responsive graphical user interface built with Python's Tkinter library, integrating interactive gameplay elements and dynamic UI updates.
+                    </p>
+                    <ul class="project-details">
+                        <li><strong>MVC Design Pattern:</strong> Applied the Model-View-Controller pattern to decouple game logic, user interface, and event handling, ensuring scalability and easy maintenance.</li>
+                        <li><strong>Event-Driven Programming:</strong> Leveraged Tkinter's event-handling capabilities to deliver a smooth, responsive user experience with keyboard inputs and UI feedback.</li>
+                        <li><strong>Object-Oriented Design:</strong> Utilized classes for modularity, enabling reusable components for game mechanics and UI functionality.</li>
+                    </ul>
+                    <p><strong>Result:</strong> Successfully created a feature-rich game with a clean and maintainable codebase, offering engaging gameplay and an intuitive user interface.</p>
+                </div>
+
+
+
+                <!-- Coding Project 4 -->
+                <div class="project" data-project="csse2310">
+                    <div class="project-image">
+                        <img src="images/csse2310.png" alt="C programming – Online auction platform" loading="lazy">
+                    </div>
+                    <h3>C - Real-Time Online Auction Platform</h3>
+                    <p>
+                        Developed two programs to implement a real-time, online auction platform, enabling clients to connect and interact with an auctioneer for selling and buying items.
+                    </p>
+                    <ul class="project-details">
+                        <li><strong>Programming Language:</strong> Implemented in C, utilizing networking and multithreaded programming techniques.</li>
+                        <li><strong>Server-Client Architecture:</strong> Developed a network server to accept client connections, allowing clients to communicate with the auctioneer via a TCP-based newline-terminated text command protocol.</li>
+                        <li><strong>Features:</strong> Included advanced functionalities such as connection limiting, signal handling, and statistics reporting to enhance robustness and reliability.</li>
+                    </ul>
+                    <p><strong>Result:</strong> Successfully created a fully functional auction platform with real-time communication between clients and the auctioneer over TCP, demonstrating efficient networking and multithreaded programming techniques.</p>
+                    <!--button class="expand-btn">Read More</button-->
+                </div>
+
+                <!-- Coding Project 2 -->
+                <div class="project" data-project="coms3200">
+                    <div class="project-image">
+                        <img src="images/coms3200.png" alt="Python Chat Server" loading="lazy">
+                    </div>
+                    <h3>Python-Based Chat Server</h3>
+                    <p>
+                        Developed a scalable Python-based chat server to handle communication between multiple clients over a network.
+                    </p>
+                    <ul class="project-details">
+                        <li>Designed a multi-threaded server using Python’s <code>socket</code> library to manage concurrent client connections.</li>
+                        <li>Implemented protocols for message broadcasting, direct messaging, and client disconnection handling.</li>
+                        <li>Integrated exception handling and timeout mechanisms to ensure reliability and prevent resource leaks.</li>
+                        <li>Tested for scalability and functionality in a virtualized network environment.</li>
+                    </ul>
+                    <p><strong>Result:</strong> Successfully created a robust chat server with efficient message handling and reliable performance under load.</p>
+                    
+                    <!--button class="expand-btn">Read More</button-->
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Project Overlay -->
+        <div id="project-overlay" class="project-overlay">
+            <div class="project-content">
+                <button class="close-btn">&times;</button>
+                <div class="project-details">
+                    <!-- Dynamic content will be injected here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact">
+            <h2 class="section-title">Contact</h2>
+            <p>Feel free to reach out to me via email or connect with me on LinkedIn.</p>
+            <div class="contact-links">
+                <a href="mailto:adubuksh@gmail.com">adubuksh@gmail.com</a>
+                <a href="https://www.linkedin.com/in/adnaanbuksh" target="_blank">LinkedIn</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Prism.js JS for Syntax Highlighting -->
+     <!-- Structured Data (Schema Markup) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Adnaan Buksh",
+      "url": "https://adnaanbuksh.netlify.app",
+      "sameAs": [
+        "https://www.linkedin.com/in/adnaanbuksh",
+        "https://github.com/Buksh-head"
+      ]
+    }
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <!-- Include language components as needed -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-c.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-java.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-haskell.min.js"></script>
+
+
+    <!-- External JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+</html>
+
