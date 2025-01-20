@@ -8,6 +8,15 @@
     --font-family: 'Roboto', sans-serif;
 }
 
+/* Light Mode Variables */
+body.light-mode {
+    --primary-color: #007acc;
+    --background-color: #ffffff;
+    --secondary-background-color: #f4f4f4;
+    --text-color: #000000;
+    --secondary-text-color: #333333;
+}
+
 /* Global Styles */
 body {
     font-family: var(--font-family);
@@ -15,6 +24,7 @@ body {
     color: var(--text-color);
     margin: 0;
     padding: 0;
+    transition: background-color 0.8s ease, color 0.8s ease;
 }
 
 /* Navigation Bar */
@@ -46,11 +56,37 @@ nav ul li a:hover {
     color: var(--primary-color);
 }
 
+/* Optional: Smooth transition for links and buttons */
+nav ul li a, button {
+    transition: color 0.8s ease, background-color 0.8s ease;
+}
+
+/* Toggle Button Animation */
+#theme-toggle {
+    background-color: transparent;
+    color: var(--text-color);
+    border: none;
+    border-radius: 30%;
+    padding: 3px;
+    cursor: pointer;
+    justify-content: center;
+    font-size: 1;
+    transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+#theme-toggle:hover {
+    transform: scale(1.2);
+    /* Zoom in on hover */
+    background-color: #81c784;
+    /* Optional hover color */
+}
+
 /* Hero Section */
 .hero {
     position: relative; /* Allows layering for the overlay */
     background-image: url('images/pcb-background.jpg');
     background-size: cover;
+    line-height: 0.85;
     background-position: center;
     padding: 100px 20px;
     text-align: center;
@@ -78,8 +114,12 @@ nav ul li a:hover {
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); /* Stronger shadow for better contrast */
 }
 
-.hero .highlight {
-    color: yellow; /* Keeps highlights distinct */
+.hero .highlight1 {
+    color: grey; /* Keeps highlights distinct */
+}
+
+.hero .highlight2 {
+    color: #51247A;
 }
 
 .hero p {

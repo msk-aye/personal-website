@@ -28,6 +28,34 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    // Add theme toggle button functionality
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    // Load saved theme from localStorage
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        body.classList.add(savedTheme);
+        themeToggle.textContent = savedTheme === 'light-mode' ? '🌞' : '🌙';
+    }
+
+    themeToggle.addEventListener('click', () => {
+        // Toggle light-mode class on the body
+        body.classList.toggle('light-mode');
+        
+        // Update button text and save theme
+        if (body.classList.contains('light-mode')) {
+            themeToggle.textContent = '🌞';
+            localStorage.setItem('theme', 'light-mode');
+        } else {
+            themeToggle.textContent = '🌙';
+            localStorage.setItem('theme', 'dark-mode');
+        }
+    });
+});
+
+
 //     // Toggle Project Overlay
 //     const projects = document.querySelectorAll('.project');
 //     const overlay = document.getElementById('project-overlay');
