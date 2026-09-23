@@ -3,47 +3,52 @@ import { GraduationCap, Award } from "lucide-react";
 
 const education = [
   {
-    institution: "University of Technology",
-    degree: "Bachelor of Science in Computer Science",
-    period: "2015 – 2019",
-    location: "Sydney, Australia",
+    institution: "University of Queensland",
+    degree: "Master of Cyber Security",
+    period: "2024 – 2026",
+    location: "Brisbane, Australia",
     description:
-      "Graduated with First Class Honours. Specialised in distributed systems and human-computer interaction. Thesis on adaptive UI personalisation using machine learning.",
+      "Postgraduate study focused on advanced cybersecurity, risk management, and security operations. Specialised in network security, incident response, and security architecture.",
     highlights: [
-      "Dean's List — 2017, 2018, 2019",
-      "Best Final Year Project Award",
-      "President, Computer Science Society",
+      "GPA 6.1/7",
+      "Specialisation: Cyber Security",
     ],
   },
   {
-    institution: "Coursera / Stanford Online",
-    degree: "Machine Learning Specialisation",
-    period: "2020",
-    location: "Online",
+    institution: "University of Queensland",
+    degree: "Bachelor of Computer Science",
+    period: "2021 – 2024",
+    location: "Brisbane, Australia",
     description:
-      "Completed Andrew Ng's foundational machine learning course series covering supervised learning, unsupervised learning, and best practices for ML systems.",
+      "Undergraduate degree covering algorithms, data structures, operating systems, databases, and software engineering. Completed projects spanning web development, AI, and systems programming.",
     highlights: [
-      "Distinction — All three courses",
-      "Capstone: Predictive text classification model",
+      "GPA 6.1/7",
+      "Final Year Project: AI Maze Solver",
+      "Information Security Tutor (2025-2026)",
     ],
   },
 ];
 
 const certifications = [
   {
-    name: "AWS Certified Solutions Architect – Associate",
+    name: "Google Cybersecurity Specialisation",
+    issuer: "Google / Coursera",
+    year: "2024",
+  },
+  {
+    name: "Introduction to Splunk",
+    issuer: "Splunk",
+    year: "2025",
+  },
+  {
+    name: "AWS Cloud Practitioner (In Progress)",
     issuer: "Amazon Web Services",
-    year: "2022",
+    year: "2026",
   },
   {
-    name: "Professional Scrum Master I (PSM I)",
-    issuer: "Scrum.org",
-    year: "2021",
-  },
-  {
-    name: "Google Cloud Professional Data Engineer",
-    issuer: "Google Cloud",
-    year: "2023",
+    name: "Azure Fundamentals (In Progress)",
+    issuer: "Microsoft",
+    year: "2026",
   },
 ];
 

@@ -4,57 +4,57 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "Luminary — Design System",
+    title: "NimbusFlow — Smart Seating Planner",
     description:
-      "A comprehensive, accessible component library built with React and TypeScript. Includes 60+ components, dark mode support, and full Storybook documentation. Used by three internal product teams.",
-    tags: ["TypeScript", "React", "Storybook", "Radix UI", "Tailwind CSS"],
-    github: "https://github.com",
-    live: "https://example.com",
+      "A full-stack React/Express/PostgreSQL application that dynamically allocates workspaces based on team, availability, and user preferences. Includes admin dashboard, real-time availability, and booking management.",
+    tags: ["React", "Express", "PostgreSQL", "TypeScript", "Docker"],
+    github: "https://github.com/msk-aye",
+    live: "https://nimbusflow.msk.fyi",
     featured: true,
   },
   {
-    title: "Meridian — Analytics Platform",
+    title: "Proxmox Home Lab",
     description:
-      "A real-time analytics dashboard that processes millions of events per day. Features custom charting, cohort analysis, and a flexible query builder with sub-second response times.",
-    tags: ["Next.js", "PostgreSQL", "Redis", "Recharts", "tRPC"],
-    github: "https://github.com",
-    live: "https://example.com",
+      "A self-hosted homelab running 6 VMs and 3 LXCs on Proxmox VE. Includes a WireGuard VPN, AdGuard DNS, Nginx reverse proxy with 9 server blocks, and a complete observability stack with Prometheus, Grafana, Loki, and Falco.",
+    tags: ["Proxmox", "Docker", "Linux", "Nginx", "WireGuard", "Prometheus", "Grafana"],
+    github: null,
+    live: null,
     featured: true,
   },
   {
-    title: "Pulse — Health Tracker",
+    title: "CVE Intelligence Tool",
     description:
-      "A mobile-first progressive web app for tracking daily health metrics. Integrates with wearable APIs, provides personalised insights, and supports offline-first data sync.",
-    tags: ["React", "PWA", "IndexedDB", "Node.js", "Chart.js"],
-    github: "https://github.com",
+      "A Python automation tool that monitors CVE feeds and correlates vulnerabilities with internal asset inventories. Reduces manual triage time by 50% and prioritises remediation based on exposure and severity.",
+    tags: ["Python", "Automation", "CVE", "REST APIs", "Security"],
+    github: "https://github.com/msk-aye",
     live: null,
     featured: false,
   },
   {
-    title: "Carta — Markdown Editor",
+    title: "ML Intrusion Detection System",
     description:
-      "A minimal, distraction-free markdown editor with live preview, custom themes, and export to PDF/HTML. Built as a desktop app with cross-platform support.",
-    tags: ["Electron", "React", "CodeMirror", "Unified"],
-    github: "https://github.com",
-    live: "https://example.com",
-    featured: false,
-  },
-  {
-    title: "Beacon — Open Source CLI",
-    description:
-      "A developer tool for monitoring and alerting on API health. Supports webhook integrations, custom thresholds, and generates detailed incident reports.",
-    tags: ["Go", "CLI", "REST APIs", "YAML"],
-    github: "https://github.com",
+      "A machine learning model trained on network traffic data to detect anomalies and intrusions. Uses feature engineering on packet metadata and evaluates against standard IDS datasets for accuracy and false-positive rates.",
+    tags: ["Python", "Machine Learning", "scikit-learn", "Network Security"],
+    github: "https://github.com/msk-aye",
     live: null,
     featured: false,
   },
   {
-    title: "Folio — Portfolio Generator",
+    title: "AI Maze Solver",
     description:
-      "A static site generator that transforms a simple YAML config into a polished portfolio website. Zero configuration, one command deploy.",
-    tags: ["Node.js", "Handlebars", "YAML", "GitHub Actions"],
-    github: "https://github.com",
-    live: "https://example.com",
+      "An AI-powered maze solver that compares pathfinding algorithms (BFS, DFS, A*) across randomly generated mazes. Visualises the search process and benchmarks performance across maze sizes and complexities.",
+    tags: ["Python", "Algorithms", "AI", "Pathfinding"],
+    github: "https://github.com/msk-aye",
+    live: null,
+    featured: false,
+  },
+  {
+    title: "Movie Finder",
+    description:
+      "A web application that searches and recommends movies using the TMDB API. Features genre filtering, user ratings, and a clean responsive interface. Deployed in Docker with Nginx reverse proxy.",
+    tags: ["React", "API Integration", "Docker", "Nginx"],
+    github: "https://github.com/msk-aye",
+    live: null,
     featured: false,
   },
 ];
@@ -69,7 +69,7 @@ export default function Projects() {
         <SectionHeader
           label="Portfolio"
           title="Selected Projects"
-          subtitle="A curated selection of work I'm proud of — from side projects to production systems."
+          subtitle="A curated selection of work I'm proud of — from production systems to side experiments."
         />
 
         {/* Featured projects */}

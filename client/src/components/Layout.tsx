@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Sun, Moon } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { useTheme } from "../contexts/ThemeContext";
 
 const NAV_LINKS = [
   { label: "About", href: "/" },
@@ -17,6 +18,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const [location] = useLocation();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const { theme, toggleTheme, switchable } = useTheme();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -31,7 +33,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   return (
     <div className="min-h-screen flex flex-col bg-background">
-      {/* ── Navigation ── */}
+      {/* Navigation */}
       <header
         className={cn(
           "fixed top-0 inset-x-0 z-50 transition-all duration-300",
@@ -48,7 +50,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 className="font-serif text-xl font-medium tracking-tight text-foreground hover:text-accent transition-colors duration-200"
                 style={{ fontFamily: "var(--font-serif)" }}
               >
-                Portfolio
+                Sulaman Khan
               </span>
             </Link>
 
@@ -69,16 +71,38 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   </li>
                 );
               })}
+              {switchable && toggleTheme && (
+                <li>
+                  <button
+                    onClick={toggleTheme}
+                    className="p-2 text-muted-foreground hover:text-foreground transition-colors"
+                    aria-label="Toggle theme"
+                  >
+                    {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
+                  </button>
+                </li>
+              )}
             </ul>
 
             {/* Mobile hamburger */}
-            <button
-              className="md:hidden p-2 text-muted-foreground hover:text-foreground transition-colors"
-              onClick={() => setMenuOpen((v) => !v)}
-              aria-label="Toggle menu"
-            >
-              {menuOpen ? <X size={20} /> : <Menu size={20} />}
-            </button>
+            <div className="md:hidden flex items-center gap-2">
+              {switchable && toggleTheme && (
+                <button
+                  onClick={toggleTheme}
+                  className="p-2 text-muted-foreground hover:text-foreground transition-colors"
+                  aria-label="Toggle theme"
+                >
+                  {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
+                </button>
+              )}
+              <button
+                className="p-2 text-muted-foreground hover:text-foreground transition-colors"
+                onClick={() => setMenuOpen((v) => !v)}
+                aria-label="Toggle menu"
+              >
+                {menuOpen ? <X size={20} /> : <Menu size={20} />}
+              </button>
+            </div>
           </nav>
         </div>
 
@@ -111,14 +135,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         )}
       </header>
 
-      {/* ── Main content ── */}
+      {/* Main content */}
       <main className="flex-1">{children}</main>
 
-      {/* ── Footer ── */}
+      {/* Footer */}
       <footer className="border-t border-border py-10">
         <div className="container flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-muted-foreground tracking-widest uppercase">
-            © {new Date().getFullYear()} — All rights reserved
+            &copy; {new Date().getFullYear()} Sulaman Khan &mdash; Brisbane, Australia
           </p>
           <ul className="flex items-center gap-6">
             {NAV_LINKS.map(({ label, href }) => (

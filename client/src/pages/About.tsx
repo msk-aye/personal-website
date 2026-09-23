@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 export default function About() {
   return (
     <div>
-      {/* ── Hero ── */}
+      {/* Hero */}
       <section className="relative min-h-screen flex items-center">
         {/* Subtle background texture */}
         <div
@@ -34,15 +34,15 @@ export default function About() {
                   animationDelay: "80ms",
                 }}
               >
-                Your Name
+                Sulaman Khan
               </h1>
               <p
                 className="text-xl text-muted-foreground leading-relaxed max-w-lg mb-8 animate-fade-in-up"
                 style={{ animationDelay: "160ms" }}
               >
-                A passionate software engineer who loves building elegant,
-                thoughtful products — from pixel-perfect interfaces to robust
-                backend systems.
+                Graduate DevSecOps Engineer at Boeing Defence Australia. I build
+                secure systems, automate with precision, and design infrastructure
+                that scales.
               </p>
 
               {/* Social links */}
@@ -51,7 +51,7 @@ export default function About() {
                 style={{ animationDelay: "240ms" }}
               >
                 <a
-                  href="https://github.com"
+                  href="https://github.com/msk-aye"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2.5 rounded-full border border-border text-muted-foreground hover:text-foreground hover:border-foreground transition-all duration-200"
@@ -60,7 +60,7 @@ export default function About() {
                   <Github size={18} />
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/muhammad-sulaman-khan"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2.5 rounded-full border border-border text-muted-foreground hover:text-foreground hover:border-foreground transition-all duration-200"
@@ -69,7 +69,7 @@ export default function About() {
                   <Linkedin size={18} />
                 </a>
                 <a
-                  href="mailto:hello@example.com"
+                  href="mailto:contact@msk.fyi"
                   className="p-2.5 rounded-full border border-border text-muted-foreground hover:text-foreground hover:border-foreground transition-all duration-200"
                   aria-label="Email"
                 >
@@ -118,7 +118,7 @@ export default function About() {
                       className="font-serif text-5xl text-muted-foreground/40 select-none"
                       style={{ fontFamily: "var(--font-serif)" }}
                     >
-                      YN
+                      SK
                     </div>
                   </div>
                 </div>
@@ -140,14 +140,14 @@ export default function About() {
         </div>
       </section>
 
-      {/* ── Quick stats ── */}
+      {/* Quick stats */}
       <section className="border-t border-border py-16">
         <div className="container">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { value: "5+", label: "Years Experience" },
-              { value: "20+", label: "Projects Shipped" },
-              { value: "10+", label: "Technologies" },
+              { value: "4+", label: "Years Experience" },
+              { value: "10+", label: "Projects Shipped" },
+              { value: "20+", label: "Technologies" },
               { value: "∞", label: "Cups of Coffee" },
             ].map(({ value, label }) => (
               <div key={label} className="text-center">
@@ -166,34 +166,36 @@ export default function About() {
         </div>
       </section>
 
-      {/* ── About blurb ── */}
+      {/* About blurb */}
       <section className="page-section">
         <div className="container">
           <div className="grid md:grid-cols-[1fr_2fr] gap-16 items-start">
             <div>
               <span className="section-label block mb-4">About Me</span>
               <h2 className="section-heading mb-4">
-                Crafting digital experiences with purpose
+                Engineering secure, scalable systems
               </h2>
               <span className="divider-line mt-6" />
             </div>
             <div className="space-y-5">
               <p className="text-muted-foreground leading-relaxed">
-                I'm a software engineer based in [Your City], with a deep
-                passion for building products that are both technically sound
-                and genuinely delightful to use. I believe that great software
-                lives at the intersection of engineering rigour and thoughtful
-                design.
+                I'm a DevSecOps Engineer based in Brisbane, Australia, currently
+                at Boeing Defence Australia integrating SAST and SCA into GitLab
+                CI/CD pipelines, signing artifacts with Cosign, and ensuring ISM
+                compliance across the software supply chain.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                When I'm not writing code, you'll find me exploring new
-                technologies, contributing to open-source projects, or enjoying
-                the outdoors. I'm always looking for the next interesting
-                problem to solve.
+                My background spans automation engineering, cybersecurity, and
+                infrastructure. I've built CVE intelligence tools that cut
+                triage time in half, configured cloud environments across AWS
+                and Azure, and maintained a Proxmox home lab with a full
+                observability stack including Prometheus, Grafana, and Falco.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                I'm currently open to new opportunities — feel free to reach
-                out if you'd like to work together.
+                When I'm not automating pipelines or tuning security tools,
+                I'm exploring new languages, contributing to open source, or
+                tinkering with AI and machine learning projects. I'm always
+                looking for the next interesting problem to solve.
               </p>
             </div>
           </div>

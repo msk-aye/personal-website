@@ -62,13 +62,13 @@ export default function Contact() {
                 {
                   icon: Mail,
                   label: "Email",
-                  value: "hello@yourname.com",
-                  href: "mailto:hello@yourname.com",
+                  value: "contact@msk.fyi",
+                  href: "mailto:contact@msk.fyi",
                 },
                 {
                   icon: MapPin,
                   label: "Location",
-                  value: "Sydney, Australia",
+                  value: "Brisbane, Australia",
                   href: null,
                 },
                 {
