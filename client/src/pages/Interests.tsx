@@ -1,57 +1,55 @@
 import SectionHeader from "@/components/SectionHeader";
 import {
   BookOpen,
-  Camera,
-  Coffee,
   Globe,
   Headphones,
-  Mountain,
-  Palette,
+  Music,
   Terminal,
+  Trophy,
 } from "lucide-react";
 
 const interests = [
   {
     icon: Terminal,
-    title: "Home Lab",
+    title: "Homelab",
     description:
-      "Running a Proxmox lab with 6 VMs and 3 LXCs, a full observability stack with Prometheus, Grafana, and Loki, plus a WireGuard VPN and AdGuard DNS. Constantly expanding.",
+      "Running a Proxmox lab with VMs and LXCs, experimenting with self-hosting, open source software, dev tooling, and AI. Constantly tinkering and expanding.",
     color: "oklch(0.72 0.12 75)",
   },
   {
-    icon: Globe,
-    title: "Cybersecurity",
+    icon: Trophy,
+    title: "F1",
     description:
-      "Deep interest in threat intelligence, incident response, and secure systems. Regularly run Cyberbit live-fire exercises and track emerging CVEs.",
-    color: "oklch(0.65 0.15 200)",
+      "Passionate about the sport, the innovation and technical design of the cars, and the art of racing. Love go karting when time allows. Always heartbroken about Ferrari. Don't like the new regs.",
+    color: "oklch(0.75 0.18 25)",
   },
   {
-    icon: Headphones,
-    title: "Music",
+    icon: Music,
+    title: "Piano",
     description:
-      "Eclectic taste spanning jazz, ambient, and indie rock. Music is a constant companion while coding — the right playlist unlocks flow state.",
+      "Learning to play piano — still an extreme novice but working through simple pieces. A lot to learn and enjoy the process of getting better.",
     color: "oklch(0.65 0.18 300)",
-  },
-  {
-    icon: Mountain,
-    title: "Hiking & Outdoors",
-    description:
-      "Brisbane's trails provide a great escape from the screen. I try to get outside regularly to clear my head and reset.",
-    color: "oklch(0.62 0.15 145)",
   },
   {
     icon: BookOpen,
     title: "Reading",
     description:
-      "Voracious reader across technical non-fiction, philosophy, and fiction. Currently working through systems thinking and distributed computing texts.",
+      "Catching up on classical literature, especially 20th century dystopian fiction. Also exploring philosophy — Nietzsche, Marx, and the ancient Greeks.",
     color: "oklch(0.65 0.15 200)",
   },
   {
-    icon: Coffee,
-    title: "Specialty Coffee",
+    icon: Headphones,
+    title: "Gaming",
     description:
-      "Home barista and coffee enthusiast. I enjoy the ritual of pour-over brewing and exploring single-origin beans from around the world.",
-    color: "oklch(0.55 0.12 55)",
+      "Competitive FPS games are the main thing — Valorant and Siege. Also hit a Minecraft phase about every two weeks or so.",
+    color: "oklch(0.62 0.15 145)",
+  },
+  {
+    icon: Globe,
+    title: "Travel",
+    description:
+      "Visited Malaysia, Indonesia, Singapore, Philippines, Pakistan, UAE, Saudi Arabia, and Türkiye. Dream destinations: Japan, the Central Asian stans, China, and New Zealand.",
+    color: "oklch(0.65 0.15 200)",
   },
 ];
 

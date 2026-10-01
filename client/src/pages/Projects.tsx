@@ -50,11 +50,12 @@ const projects = [
   },
   {
     title: "Movie Finder",
+    note: "My first web project — rough edges and all.",
     description:
       "A web application that searches and recommends movies using the TMDB API. Features genre filtering, user ratings, and a clean responsive interface. Deployed in Docker with Nginx reverse proxy.",
     tags: ["React", "API Integration", "Docker", "Nginx"],
     github: "https://github.com/msk-aye",
-    live: null,
+    live: "https://movies.msk.fyi",
     featured: false,
   },
 ];

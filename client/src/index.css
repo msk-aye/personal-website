@@ -8,7 +8,7 @@
 /* Loaded via index.html */
 
 /* ─── Design Tokens ─────────────────────────────────────────────────── */
-@theme inline {
+@theme {
   --radius-sm: 0.25rem;
   --radius-md: 0.5rem;
   --radius-lg: 0.75rem;
@@ -82,7 +82,15 @@
   --color-ring: oklch(0.72 0.12 75);
 }
 
+/* ─── Bold headings ──────────────────────────────────────────────────── */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 800;
+}
+
 /* ─── Base layer ─────────────────────────────────────────────────────── */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 800;
+}
 @layer base {
   * {
     @apply border-border;
@@ -99,16 +107,16 @@
     font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1, h2, h3 {
     font-family: var(--font-serif);
-    font-weight: 400;
+    font-weight: 700;
     letter-spacing: -0.01em;
     line-height: 1.2;
   }
 
-  h1 { font-size: clamp(2.5rem, 5vw, 4rem); }
-  h2 { font-size: clamp(1.75rem, 3vw, 2.5rem); }
-  h3 { font-size: clamp(1.25rem, 2vw, 1.75rem); }
+  h1 { font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 700; }
+  h2 { font-size: clamp(1.75rem, 3vw, 2.5rem); font-weight: 700; }
+  h3 { font-size: clamp(1.25rem, 2vw, 1.75rem); font-weight: 600; }
 
   p {
     line-height: 1.75;
@@ -154,9 +162,9 @@
   max-width: 72ch;
 }
 
-.prose h1, .prose h2, .prose h3, .prose h4 {
+.prose h1, .prose h2, .prose h3, .prose h4, h5, h6 { font-weight: 800;
   font-family: var(--font-serif);
-  font-weight: 400;
+  font-weight: 700;
 }
 
 /* ─── Keyframes ──────────────────────────────────────────────────────── */
@@ -198,14 +206,14 @@
 .section-heading {
   font-family: var(--font-serif);
   font-size: clamp(1.75rem, 3vw, 2.5rem);
-  font-weight: 400;
+  font-weight: 700;
   color: var(--color-foreground);
   letter-spacing: -0.01em;
 }
 
 .section-label {
   font-size: 0.7rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--color-accent);
@@ -252,7 +260,7 @@
 
 /* ─── Page section spacing ───────────────────────────────────────────── */
 .page-section {
-  padding-block: 6rem;
+  padding-block: 4rem;
 }
 
 @media (min-width: 768px) {

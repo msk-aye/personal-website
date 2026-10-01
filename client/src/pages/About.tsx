@@ -25,7 +25,7 @@ export default function About() {
                 className="section-label block mb-6 animate-fade-in-up"
                 style={{ animationDelay: "0ms" }}
               >
-                Hello, I'm
+                Hello, I am
               </span>
               <h1
                 className="font-serif text-foreground mb-6 animate-fade-in-up"
@@ -34,13 +34,17 @@ export default function About() {
                   animationDelay: "80ms",
                 }}
               >
-                Sulaman Khan
+                MSK
               </h1>
+              <div className="text-xs text-muted-foreground tracking-widest uppercase mb-6">
+                Also at: <a href="https://nimbusflow.msk.fyi" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">nimbusflow.msk.fyi</a> · <a href="https://movies.msk.fyi" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">movies.msk.fyi</a>
+                <span className="block text-[10px] text-muted-foreground/60 mt-1 italic">movies.msk.fyi is my first project — rough edges and all</span>
+              </div>
               <p
                 className="text-xl text-muted-foreground leading-relaxed max-w-lg mb-8 animate-fade-in-up"
                 style={{ animationDelay: "160ms" }}
               >
-                Graduate DevSecOps Engineer at Boeing Defence Australia. I build
+                Graduate DevSecOps / Security Engineer at a major defence contractor. I build
                 secure systems, automate with precision, and design infrastructure
                 that scales.
               </p>
@@ -132,23 +136,17 @@ export default function About() {
             </div>
           </div>
         </div>
-
-        {/* Scroll hint */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-muted-foreground/50 animate-bounce">
-          <span className="text-xs tracking-widest uppercase">Scroll</span>
-          <ArrowDown size={14} />
-        </div>
       </section>
 
-      {/* Quick stats */}
-      <section className="border-t border-border py-16">
+      {/* Stats */}
+      <section className="py-16 border-y border-border">
         <div className="container">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { value: "4+", label: "Years Experience" },
-              { value: "10+", label: "Projects Shipped" },
-              { value: "20+", label: "Technologies" },
-              { value: "∞", label: "Cups of Coffee" },
+              { value: "2", label: "Degrees" },
+              { value: "5", label: "Work Placements" },
+              { value: "6", label: "VMs and LXCs" },
+              { value: "11", label: "Countries Visited" },
             ].map(({ value, label }) => (
               <div key={label} className="text-center">
                 <div
@@ -179,23 +177,22 @@ export default function About() {
             </div>
             <div className="space-y-5">
               <p className="text-muted-foreground leading-relaxed">
-                I'm a DevSecOps Engineer based in Brisbane, Australia, currently
-                at Boeing Defence Australia integrating SAST and SCA into GitLab
+                I am a DevSecOps / Security Engineer based in Brisbane, Australia, currently
+                at a major defence contractor integrating SAST and SCA into GitLab
                 CI/CD pipelines, signing artifacts with Cosign, and ensuring ISM
                 compliance across the software supply chain.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 My background spans automation engineering, cybersecurity, and
-                infrastructure. I've built CVE intelligence tools that cut
+                infrastructure. I have built CVE intelligence tools that cut
                 triage time in half, configured cloud environments across AWS
                 and Azure, and maintained a Proxmox home lab with a full
                 observability stack including Prometheus, Grafana, and Falco.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                When I'm not automating pipelines or tuning security tools,
-                I'm exploring new languages, contributing to open source, or
-                tinkering with AI and machine learning projects. I'm always
-                looking for the next interesting problem to solve.
+                When I am not automating pipelines or tuning security tools,
+                I am exploring new languages, tinkering with AI and machine learning,
+                or looking for the next interesting problem to solve.
               </p>
             </div>
           </div>

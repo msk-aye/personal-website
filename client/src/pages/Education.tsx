@@ -5,7 +5,7 @@ const education = [
   {
     institution: "University of Queensland",
     degree: "Master of Cyber Security",
-    period: "2024 – 2026",
+    period: "2025",
     location: "Brisbane, Australia",
     description:
       "Postgraduate study focused on advanced cybersecurity, risk management, and security operations. Specialised in network security, incident response, and security architecture.",
@@ -23,7 +23,7 @@ const education = [
       "Undergraduate degree covering algorithms, data structures, operating systems, databases, and software engineering. Completed projects spanning web development, AI, and systems programming.",
     highlights: [
       "GPA 6.1/7",
-      "Final Year Project: AI Maze Solver",
+      "Final Year Project: NimbusFlow",
       "Information Security Tutor (2025-2026)",
     ],
   },

@@ -3,8 +3,8 @@ import { Badge } from "@/components/ui/badge";
 
 const experiences = [
   {
-    company: "Boeing Defence Australia",
-    role: "Graduate DevSecOps Engineer",
+    company: "A Major Defence Contractor",
+    role: "Graduate DevSecOps / Security Engineer",
     period: "Feb 2026 – Present",
     location: "Brisbane, Australia",
     description:
@@ -14,7 +14,7 @@ const experiences = [
   {
     company: "UQ",
     role: "Information Security Tutor",
-    period: "Jun 2025 – Feb 2026",
+    period: "Jun 2025 – Present",
     location: "Brisbane, Australia",
     description:
       "Tutored undergraduate students in information security fundamentals, covering network security, cryptography, and secure coding practices. Led practical lab sessions and provided individual guidance on assignments and exam preparation.",

@@ -2,7 +2,7 @@ FROM node:24-alpine
 WORKDIR /app
 
 COPY . .
-RUN corepack enable && pnpm install --no-frozen-lockfile --ignore-scripts
+RUN corepack enable && echo "yes" | pnpm install --no-frozen-lockfile --ignore-scripts
 RUN pnpm build
 
 EXPOSE 8083

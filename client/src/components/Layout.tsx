@@ -50,7 +50,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 className="font-serif text-xl font-medium tracking-tight text-foreground hover:text-accent transition-colors duration-200"
                 style={{ fontFamily: "var(--font-serif)" }}
               >
-                Sulaman Khan
+                MSK
               </span>
             </Link>
 
@@ -142,9 +142,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <footer className="border-t border-border py-10">
         <div className="container flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-muted-foreground tracking-widest uppercase">
-            &copy; {new Date().getFullYear()} Sulaman Khan &mdash; Brisbane, Australia
+            &copy; {new Date().getFullYear()} MSK &mdash; Brisbane, Australia
           </p>
-          <ul className="flex items-center gap-6">
+          <ul className="flex flex-wrap items-center gap-6">
             {NAV_LINKS.map(({ label, href }) => (
               <li key={label}>
                 <Link href={href}>
@@ -156,7 +156,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             ))}
           </ul>
         </div>
-      </footer>
+      <div className="text-center text-xs text-muted-foreground py-4">This website is under development and constantly improving.</div></footer>
     </div>
   );
 }
